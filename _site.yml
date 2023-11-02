@@ -15,4 +15,4 @@ navbar:
       href: https://www.linkedin.com/in/rujinlim/
 output:
   html_document:
-    theme: cerulean
+    theme: sandstone
