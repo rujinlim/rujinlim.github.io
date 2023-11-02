@@ -1,8 +1,27 @@
 ---
-title: "Just for fun!"
+title: "Some dishes I've made!"
 output: 
   html_document:
       toc: true
       toc_float: true
 ---
+
+
+![](images/1.JPG){width=250px}
+![](images/2.JPG){width=250px}
+![](images/3.JPEG){width=250px}
+![](images/4.JPEG){width=250px}
+![](images/5.JPEG){width=250px}
+![](images/6.JPEG){width=250px}
+![](images/7.JPEG){width=250px}
+![](images/8.JPEG){width=250px}
+![](images/9.JPEG){width=250px}
+![](images/10.JPEG){width=250px}
+![](images/11.JPEG){width=250px}
+![](images/12.JPEG){width=250px}
+![](images/13.JPEG){width=250px}
+![](images/14.JPEG){width=250px}
+![](images/15.JPEG){width=250px}
+![](images/16.JPEG){width=250px}
+![](images/17.JPEG){width=250px}
 
