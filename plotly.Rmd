@@ -1,19 +1,9 @@
 ---
-title: "NYC Restaurant Inspection Plots"
+title: "Instacart Plots"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
-    theme: cosmo
-    source: embed
-    navbar:
-      - { title: "Home", href: "https://rujinlim.github.io/index.html", align: left }      
-      - { title: "My Work", href: "https://rujinlim.github.io/work.html", align: left }
-      - { title: "My Projects", href: "https://rujinlim.github.io/projects.html", align: left }      
-      - { title: "For Fun", href: "https://rujinlim.github.io/fun.html", align: left }
-      - { icon: "ion-android-mail", href: "limrujin@gmail.com", align: right }
-      - { icon: "ion-social-github", href: "https://github.com/rujinlim/", align: right }
-      - { icon: "ion:logo-linkedin", href: "https://www.linkedin.com/in/rujinlim/", align: right }
 ---
 
 ```{r}
@@ -30,36 +20,13 @@ Column {data-width=450}
 ### Chart A
 
 ```{r}
-chart_a = instacart |> 
-  count(aisle) |>
-  mutate(aisle = fct_reorder(aisle, n)) |> 
-  filter(n > 10000) 
-  
-chart_a |> 
-  mutate(text_label = str_c("Aisle: ", aisle, "\nNumber of orders: ", n)) |> 
-  plot_ly(x = ~aisle, y = ~n,
-          type = "scatter",
-          mode = "markers",
-          color = ~aisle,
-          text = ~text_label) |> 
-  layout(title = "Aisles with most orders",
-         yaxis = list(title = "Number of Orders"),
-         xaxis = list(title = "Aisle", tickangle = -45)) 
-```
-
-Column {data-width=350}
------------------------------------------------------------------------
-
-### Chart B
-
-```{r}
-chart_b = 
+chart_a = 
   instacart |> 
   filter(department == "alcohol") |> 
   group_by(aisle, order_hour_of_day) |> 
   summarize(count = n()) 
 
-chart_b |> 
+chart_a |> 
   mutate(text_label = str_c("Aisle: ", aisle, "\nHour: ", order_hour_of_day, "\nCount: ", count)) |> 
   plot_ly(x = ~order_hour_of_day, y = ~count,
           type = "scatter",
@@ -71,20 +38,41 @@ chart_b |>
           xaxis = list(title = "Department"))
 ```
 
-### Chart C
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
 
 ```{r}
-chart_c = instacart |> 
+chart_b = instacart |> 
   count(department) |> 
   arrange(desc(n))
 
-chart_c |> 
+chart_b |> 
   plot_ly(x = ~department, y = ~n, 
           type = "bar",
           color = ~department) |> 
   layout(title = "Counts by Department",
          xaxis = list(title = "Department", tickangle = -45),
          yaxis = list(title = "Counts"))
+```
+
+### Chart C
+
+```{r}
+chart_c = instacart |>
+  filter(product_name == "Krinkle Cut Classic Barbecue Potato Chips"| product_name == "Sea Salt Potato Chips") |>
+  count(product_name, days_since_prior_order)
+ 
+chart_c |> 
+  mutate(text_label = str_c("Aisle: ", days_since_prior_order, "\nNumber of orders: ", n)) |> 
+  plot_ly(x = ~days_since_prior_order, y = ~n, color = ~product_name,
+          type = "scatter",
+          mode = "markers",
+          text = ~text_label) |> 
+  layout(title = "BBQ vs. Sea Salt Chips: Number of days since prior order",
+         yaxis = list(title = "Number of Orders"),
+         xaxis = list(title = "Number of days since prior order")) 
 ```
 
 
