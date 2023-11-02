@@ -2,11 +2,12 @@ name: "Yay internet!"
 output_dir: "."
 navbar:
   title: "Home"
-  right:
-    - text: "About"
-      href: about.html
-    - text: "Projects"
+  left:
+    - text: "My Work"
+      href: work.html
+    - text: "My Projects"
       href: projects.html
+  right:
     - icon: fa-envelope fa-lg
       href: mailto:<limrujin@gmail.com>
     - icon: fa-github fa-lg
