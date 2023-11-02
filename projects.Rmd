@@ -12,8 +12,6 @@ This is my final-year dissertation on models of cell growth and division. To bri
  
 ## Identifying Risk Factors of COVID-19 in the UK 
 
-Data analysis and predictive modelling using social, demographic and economic data by the Office for National Statistics (UK)
-
 This was a project I did during COVID, where I analyzed why some geographical areas in the UK had more deaths than others, as an effort to identify potential risk factors of COVID other than gender, ethnicity, pre-existing health conditions, etc. I used data published by the Office for National Statistics (ONS) that include almost 70 different variables such as occupation, social grade, public transport, and so on. I also conducted analysis on the complete data and come up with a model to predict the number of deaths in each geographical area for the portion of data that was unavailable. Our prediction model came top 8 out of 75 groups in class :'). 
 
 ## Optimizing Turnaround Time: How should airplanes by boarded and deboarded?
