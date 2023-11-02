@@ -7,6 +7,8 @@ navbar:
       href: work.html
     - text: "My Projects"
       href: projects.html
+    - text: "For fun"
+      href: projects.html
   right:
     - icon: fa-envelope fa-lg
       href: mailto:<limrujin@gmail.com>

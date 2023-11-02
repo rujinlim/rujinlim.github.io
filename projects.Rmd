@@ -1,10 +1,19 @@
 ---
-title: "Projects"
-author: "rl3411"
-date: "2023-11-02"
+title: "Past Projects"
 output: 
   html_document:
       toc: true
       toc_float: true
 ---
 
+## Growth-Fragmentation Models: Cell Growth and Division 
+
+Simulation of 4 algorithms in R to predict the asymptotic profile of cell systems by testing empirical Markov Chain approaches 
+
+## Identifying Risk Factors of COVID-19 in the UK 
+
+Data analysis and predictive modelling using social, demographic and economic data by the Office for National Statistics (UK)
+
+## Optimizing Turnaround Time: How should airplanes by boarded and deboarded?
+
+Mathematical model building and simulation to compare 8 boarding and deboarding approaches 

@@ -1,10 +1,135 @@
 ---
-title: "My work"
-author: "rl3411"
-date: "2023-11-02"
+title: "Resume"
 output: 
   html_document:
       toc: true
       toc_float: true
 ---
+
+--- 
+
+## EDUCATION
+
+**Columbia University, Mailman School of Public Health, New York, NY**[08/2023 - 05/2025]{style="float:right"}
+
+*MS Biostatistics (Public Health Data Science)*
+
+- Courses: Biostatistical Methods, Data Science, Survival Analysis, Statistical Inference, Longitudinal Data Analysis
+- Full-ride scholarship: Khazanah Global Scholar
+
+**University College London, London, United Kingdom**[09/2019 – 06/2022]{style="float:right"}
+
+*BSc Statistics – First Class Honors (Summa Cum Laude equivalent)*
+
+- Relevant courses: Medical Statistics, Computing for Practical Statistics (R, SAS), Statistical Inference
+- Dissertation: Models of Cell Growth and Division 
+- Leadership positions: Laidlaw Research and Leadership Scholar, Vice President of UCL Statistics Society, Events Executive at UCL Fintech Society, Secretarial Director of Malaysian Economics Association (AMEU)
+
+---
+
+## WORK EXPERIENCE
+
+**University of Malaya Medical Centre (UMMC)**, Kuala Lumpur, Malaysia[11/2022 – 05/2023]{style="float:right"}
+
+*Data Analyst/Research Assistant, Department of Endocrinology*
+
+- Successfully executed free-text analysis on the Electronic Health Record of 15,543 patients using R and extracted relevant ICD-10 codes, achieving a reporting accuracy of 99.3%
+- Assisted in a Diabetes Screening Drive and performed statistical analysis on data from 791 patients, to discern distinctive patterns among normoglycemia, prediabetes, and diabetes patient groups for developing a screening and prevention cohort
+- Conducted a RedCap Workshop Series to train Research Fellows and MBBS students on essential database management skills
+
+
+**Harefield Hospital, National Health Service (NHS)**, London, United Kingdom[10/2021 – 11/2021]{style="float:right"}
+
+*Medical Statistics Intern under Dr Shahzad Raja*
+
+- Evaluated the association between the clinical benefit of the off-pump technique during bypass surgery (as opposed to on-pump) and the stage of chronic renal disease
+- Cleaned and analyzed patient data using statistical tests and models, as well as interpreting the results
+
+**University College London (UCL)**, London, United Kingdom
+
+*Campus Ambassador*[08/2021 – 06/2022]{style="float:right"}
+
+- Facilitated campus events by conducting campus tours, ushering and managing document collection queues during orientation week and graduation season
+
+*Student Ambassador, Department of Statistical Science*[02/2021 – 03/2022]{style="float:right"}
+
+- Represented the department during 8 open days by speaking to prospective students about my course, experience and life at UCL
+- Actively engaged in the recruitment and training of future student ambassadors
+
+*Transition Mentor, Department of Statistical Science*[09/2020 – 12/2021]{style="float:right"}
+
+- Moderated 10 weekly mentoring sessions in the first semester of each academic year to help first-year students settle in by directing them to support services, while providing guidance on course-specific resources, study skills and time management techniques
+
+**Fusion Hub**, Fiji[06/2021 – 09/2021]{style="float:right"}
+
+*Business Development Intern under Think Pacific *
+
+- Designed a business model for the Zero Waste Hub, a zero-waste grocery delivery service aiming to reduce Fiji’s two biggest problems – plastic waste and unemployment 
+- Developed global citizenship and cultural awareness by working with Fijian Ministries and NGOs to empower rural communities while learning about the Fijian culture
+
+**The Laidlaw Research and Leadership Program, The Laidlaw Foundation **, London, United Kingdom[04/2020 – 10/2020]{style="float:right"}
+
+*Laidlaw Research Scholar*
+
+- 1 of the 24 scholars chosen amongst a pool of 600 competitive applicants in UCL, receiving £6600 scholarship Worked alongside Dr Silvia Dal Bianco to investigate the effects of Distributed Ledger Technologies (DLTs) and cryptocurrencies on financial development by reproducing the “4x2 matrix” dataset produced by Čihák et al. (2012) at the World Bank
+- Analyzed the correlation between the “4” attributes proposed (depth, access, efficiency and stability) and economic growth using R to discover how blockchain technology can deliver economic gains
+- Effectively presented findings at the annual Laidlaw Scholars Conference and networked with Laidlaw Scholars worldwide
+
+**ReachOutUK**, London, United Kingdom[12/2019 – 03/2020]{style="float:right"}
+
+*Mentor*
+
+- Volunteered in Carlton Primary School to help children from disadvantaged communities fulfil their true potential through ten 2-hour weekly tutorial sessions in Science and Mathematics
+- Mentored a Year 5 student on a one-to-one basis to provide academic and character development support to further their growth
+
+---
+
+## LEADERSHIP INVOLVEMENT & EXTRA-CURRICULAR ACTIVITIES
+
+**UCL Statistics Society**, London, United Kingdom[11/2019 – 02/2022]{style="float:right"}
+
+*Treasurer (2021/22), Vice President (2020/21), First-Year Representative (2019/20)*
+
+- Guided the Treasury Team and successfully secured sponsorships while managing the overall operations of the Society
+- Piloted a revamp for the Executive Board while leading a rebranding of the Society through new faculty-student collaborative events such as the “Know Your Professor” flagship series
+- Accelerated outreach and participation rates by over 200% as compared to previous years by organizing technical workshops such as the Python Crash Course, Spring Week Panel and CV sessions in conjunction with UCL alumni
+
+
+**UCL FinTech Society**, London, United Kingdom[05/2020 – 05/2021]{style="float:right"}
+
+*Events Executive*
+
+- Spearheaded the inaugural Fintech Career Incubator for Europe’s Largest FinTech Society to equip 25 high performing students with crucial skills and knowledge through a comprehensive 7-week program of different panel talks and workshops while allowing them to network with industry professionals
+- Organized 15 different events including the Future of Finance Conference, which aimed to spark intellectually stimulating conversations while broadening the horizons of FinTech Society Members
+
+**The Association of Malaysian Economics Undergraduates (AMEU)**, United Kingdom
+
+*Secretarial Director*[02/2020 – 02/2021]{style="float:right"}
+
+- Produced event proposals, monthly newsletters, prospectus, reports for bi-weekly meetings and events while launching the official AMEU website
+- Assisted in event organizing, including a case study competition in London (MECSC) to provide Malaysian students with fresh perspectives on current issues while applying their economic knowledge to real-world situations
+
+*Corporate Relations Executive, AMEU Economics Summit 2020*[04/2020 – 09/2020]{style="float:right"}
+
+- Successfully secured RM5000 in sponsorships from OCBC Bank and Silverlake Axis Sdn. Bhd. for AMEU’s annual flagship event
+- Drafted proposals and liaised with over 20 companies in Malaysia
+
+
+**UCL Mathematics and Physical Sciences Department**, London, United Kingdom[09/2019 – 06/2022 ]{style="float:right"}
+
+*Student Academic Representative*
+
+- Bridged the gap between 200+ students and the department by gathering feedback and communicating student interests to better inform department policy 
+- Gained broad analytical and problem-solving skills by addressing students’ concerns in meetings with senior staff 
+
+---
+
+## SKILLS AND INTERESTS
+
+- PROGRAMMING SKILLS: Proficient with R, Python, SAS, Stata, BUGS, GitHub
+- OTHER SKILLS & CERTIFICATION: Strong knowledge of MS Office, Google Workspace, RedCap, Canva
+- LANGUAGES: Native in English, Chinese; Conversant in Bahasa Malaysia, Hokkien and Teochew
+- INTERESTS: Aging population, Biostatistics, Dance, Piano, Chess
+
+
 
