@@ -9,6 +9,8 @@ navbar:
       href: projects.html
     - text: "For fun"
       href: fun.html
+    - text: "Plots"
+      href: plotly.html 
   right:
     - icon: fa-envelope fa-lg
       href: mailto:<limrujin@gmail.com>

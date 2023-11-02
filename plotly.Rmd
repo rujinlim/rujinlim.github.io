@@ -1,0 +1,93 @@
+---
+title: "NYC Restaurant Inspection Plots"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    theme: cosmo
+    source: embed
+    navbar:
+      - { title: "Home", href: "https://rujinlim.github.io/index.html", align: left }      
+      - { title: "My Work", href: "https://rujinlim.github.io/work.html", align: left }
+      - { title: "My Projects", href: "https://rujinlim.github.io/projects.html", align: left }      
+      - { title: "For Fun", href: "https://rujinlim.github.io/fun.html", align: left }
+      - { icon: "ion-android-mail", href: "limrujin@gmail.com", align: right }
+      - { icon: "ion-social-github", href: "https://github.com/rujinlim/", align: right }
+      - { icon: "ion:logo-linkedin", href: "https://www.linkedin.com/in/rujinlim/", align: right }
+---
+
+```{r}
+library(plotly)
+library(p8105.datasets)
+library(flexdashboard)
+library(tidyverse)
+data("instacart")
+```
+
+Column {data-width=450}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+chart_a = instacart |> 
+  count(aisle) |>
+  mutate(aisle = fct_reorder(aisle, n)) |> 
+  filter(n > 10000) 
+  
+chart_a |> 
+  mutate(text_label = str_c("Aisle: ", aisle, "\nNumber of orders: ", n)) |> 
+  plot_ly(x = ~aisle, y = ~n,
+          type = "scatter",
+          mode = "markers",
+          color = ~aisle,
+          text = ~text_label) |> 
+  layout(title = "Aisles with most orders",
+         yaxis = list(title = "Number of Orders"),
+         xaxis = list(title = "Aisle", tickangle = -45)) 
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+chart_b = 
+  instacart |> 
+  filter(department == "alcohol") |> 
+  group_by(aisle, order_hour_of_day) |> 
+  summarize(count = n()) 
+
+chart_b |> 
+  mutate(text_label = str_c("Aisle: ", aisle, "\nHour: ", order_hour_of_day, "\nCount: ", count)) |> 
+  plot_ly(x = ~order_hour_of_day, y = ~count,
+          type = "scatter",
+          mode = 'lines+markers',
+          color = ~aisle,
+          text = ~text_label) |> 
+          layout(title = "Alcohol: Number of orders throughout the day",
+          yaxis = list(title = "# of Orders"),
+          xaxis = list(title = "Department"))
+```
+
+### Chart C
+
+```{r}
+chart_c = instacart |> 
+  count(department) |> 
+  arrange(desc(n))
+
+chart_c |> 
+  plot_ly(x = ~department, y = ~n, 
+          type = "bar",
+          color = ~department) |> 
+  layout(title = "Counts by Department",
+         xaxis = list(title = "Department", tickangle = -45),
+         yaxis = list(title = "Counts"))
+```
+
+
+
+
+
